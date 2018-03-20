@@ -15,4 +15,5 @@ def bubble(list):
     print('list=', list)
 list = [1, 25, 15, 7, 10, 5]
 #list = [1, 25]
+list = [1, 25, 15, 7, 10, 5, 6]
 bubble(list)
