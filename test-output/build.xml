@@ -1,0 +1,17 @@
+<project name="testdooolyapi" default="api-report" basedir=".">    
+  <property name="lib.dir" value="lib" />
+    <path id="test.classpath">
+        <fileset dir="${lib.dir}" includes= "*.jar "/>
+    </path>
+  <target name="api-report">
+    <!-- ɾ��֮ǰ�������ļ����ҷ��������ɾ���Ļ��ڶ������в��Ḳ�Ǹ������� -->
+      <delete dir="testdooolyapi" />
+      <echo message="work"></echo>
+      <xslt in="E:/work/testdooolyapi/test-output/testng-results.xml"
+          style="E:/work/testdooolyapi/test-output/testng-results.xsl"
+          out="E:/work/testdooolyapi/test-output/index1.html">
+          <param name="testNgXslt.outputDir" expression="E:/work/testdooolyapi/test-output"/>
+          <classpath refid="test.classpath"/>
+      </xslt>
+  </target>
+</project>

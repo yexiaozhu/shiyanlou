@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[[正常用例]：获取北京天气成功！]]>
+    </line>
+    <line>
+      <![CDATA[请求地址：http://www.weather.com.cn/data/cityinfo/101010100.html]]>
+    </line>
+    <line>
+      <![CDATA[返回结果：{"weatherinfo":{"city":"北京","cityid":"101010100","temp1":"-2℃","temp2":"16℃","weather":"晴","img1":"n0.gif","img2":"d0.gif","ptime":"18:00"}}]]>
+    </line>
+    <line>
+      <![CDATA[用例结果：resultcode => excepted: 北京 ,actual: 北京]]>
+    </line>
+    <line>
+      <![CDATA[[正常用例]：获取上海天气成功！]]>
+    </line>
+    <line>
+      <![CDATA[请求地址：http://www.weather.com.cn/data/cityinfo/101020100.html]]>
+    </line>
+    <line>
+      <![CDATA[返回结果：{"weatherinfo":{"city":"上海","cityid":"101020100","temp1":"6℃","temp2":"16℃","weather":"多云","img1":"n1.gif","img2":"d1.gif","ptime":"18:00"}}]]>
+    </line>
+    <line>
+      <![CDATA[用例结果：resultcode => excepted: 上海 ,actual: 上海]]>
+    </line>
+    <line>
+      <![CDATA[[正常用例]：获取深圳天气成功！]]>
+    </line>
+    <line>
+      <![CDATA[请求地址：http://www.weather.com.cn/data/cityinfo/101280601.html]]>
+    </line>
+    <line>
+      <![CDATA[返回结果：{"weatherinfo":{"city":"深圳","cityid":"101280601","temp1":"14℃","temp2":"23℃","weather":"晴","img1":"n0.gif","img2":"d0.gif","ptime":"18:00"}}]]>
+    </line>
+    <line>
+      <![CDATA[用例结果：resultcode => excepted: 深圳 ,actual: 深圳]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="186" started-at="2018-05-18T07:07:55Z" finished-at="2018-05-18T07:07:55Z">
+    <groups>
+      <group name="BaseCase">
+        <method signature="test.getBeijing_Succ()[pri:0, instance:doooly.testcase.test@735b5592]" name="getBeijing_Succ" class="doooly.testcase.test"/>
+        <method signature="test.getShangHai_Succ()[pri:0, instance:doooly.testcase.test@735b5592]" name="getShangHai_Succ" class="doooly.testcase.test"/>
+        <method signature="test.getSheZhen_Succ()[pri:0, instance:doooly.testcase.test@735b5592]" name="getSheZhen_Succ" class="doooly.testcase.test"/>
+      </group> <!-- BaseCase -->
+    </groups>
+    <test name="Default test" duration-ms="186" started-at="2018-05-18T07:07:55Z" finished-at="2018-05-18T07:07:55Z">
+      <class name="doooly.testcase.test">
+        <test-method status="PASS" signature="getBeijing_Succ()[pri:0, instance:doooly.testcase.test@735b5592]" name="getBeijing_Succ" duration-ms="116" started-at="2018-05-18T07:07:55Z" finished-at="2018-05-18T07:07:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[正常用例]：获取北京天气成功！]]>
+            </line>
+            <line>
+              <![CDATA[请求地址：http://www.weather.com.cn/data/cityinfo/101010100.html]]>
+            </line>
+            <line>
+              <![CDATA[返回结果：{"weatherinfo":{"city":"北京","cityid":"101010100","temp1":"-2℃","temp2":"16℃","weather":"晴","img1":"n0.gif","img2":"d0.gif","ptime":"18:00"}}]]>
+            </line>
+            <line>
+              <![CDATA[用例结果：resultcode => excepted: 北京 ,actual: 北京]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBeijing_Succ -->
+        <test-method status="PASS" signature="getShangHai_Succ()[pri:0, instance:doooly.testcase.test@735b5592]" name="getShangHai_Succ" duration-ms="14" started-at="2018-05-18T07:07:55Z" finished-at="2018-05-18T07:07:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[正常用例]：获取上海天气成功！]]>
+            </line>
+            <line>
+              <![CDATA[请求地址：http://www.weather.com.cn/data/cityinfo/101020100.html]]>
+            </line>
+            <line>
+              <![CDATA[返回结果：{"weatherinfo":{"city":"上海","cityid":"101020100","temp1":"6℃","temp2":"16℃","weather":"多云","img1":"n1.gif","img2":"d1.gif","ptime":"18:00"}}]]>
+            </line>
+            <line>
+              <![CDATA[用例结果：resultcode => excepted: 上海 ,actual: 上海]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getShangHai_Succ -->
+        <test-method status="PASS" signature="getSheZhen_Succ()[pri:0, instance:doooly.testcase.test@735b5592]" name="getSheZhen_Succ" duration-ms="13" started-at="2018-05-18T07:07:55Z" finished-at="2018-05-18T07:07:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[正常用例]：获取深圳天气成功！]]>
+            </line>
+            <line>
+              <![CDATA[请求地址：http://www.weather.com.cn/data/cityinfo/101280601.html]]>
+            </line>
+            <line>
+              <![CDATA[返回结果：{"weatherinfo":{"city":"深圳","cityid":"101280601","temp1":"14℃","temp2":"23℃","weather":"晴","img1":"n0.gif","img2":"d0.gif","ptime":"18:00"}}]]>
+            </line>
+            <line>
+              <![CDATA[用例结果：resultcode => excepted: 深圳 ,actual: 深圳]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getSheZhen_Succ -->
+      </class> <!-- doooly.testcase.test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

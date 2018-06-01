@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 18 15:07:55 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (186 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='doooly.testcase.test.getBeijing_Succ()'><b>getBeijing_Succ</b><br>Test class: doooly.testcase.test<br/>
+<a href="#Output-1698097425" onClick='toggleBox("Output-1698097425", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1698097425" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1698097425">
+[正常用例]：获取北京天气成功！<br/>
+请求地址：http://www.weather.com.cn/data/cityinfo/101010100.html<br/>
+返回结果：{"weatherinfo":{"city":"北京","cityid":"101010100","temp1":"-2℃","temp2":"16℃","weather":"晴","img1":"n0.gif","img2":"d0.gif","ptime":"18:00"}}<br/>
+用例结果：resultcode => excepted: 北京 ,actual: 北京<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>doooly.testcase.test@735b5592</td></tr>
+<tr>
+<td title='doooly.testcase.test.getShangHai_Succ()'><b>getShangHai_Succ</b><br>Test class: doooly.testcase.test<br/>
+<a href="#Output-1260134048" onClick='toggleBox("Output-1260134048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1260134048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1260134048">
+[正常用例]：获取上海天气成功！<br/>
+请求地址：http://www.weather.com.cn/data/cityinfo/101020100.html<br/>
+返回结果：{"weatherinfo":{"city":"上海","cityid":"101020100","temp1":"6℃","temp2":"16℃","weather":"多云","img1":"n1.gif","img2":"d1.gif","ptime":"18:00"}}<br/>
+用例结果：resultcode => excepted: 上海 ,actual: 上海<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>doooly.testcase.test@735b5592</td></tr>
+<tr>
+<td title='doooly.testcase.test.getSheZhen_Succ()'><b>getSheZhen_Succ</b><br>Test class: doooly.testcase.test<br/>
+<a href="#Output-391618063" onClick='toggleBox("Output-391618063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-391618063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-391618063">
+[正常用例]：获取深圳天气成功！<br/>
+请求地址：http://www.weather.com.cn/data/cityinfo/101280601.html<br/>
+返回结果：{"weatherinfo":{"city":"深圳","cityid":"101280601","temp1":"14℃","temp2":"23℃","weather":"晴","img1":"n0.gif","img2":"d0.gif","ptime":"18:00"}}<br/>
+用例结果：resultcode => excepted: 深圳 ,actual: 深圳<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>doooly.testcase.test@735b5592</td></tr>
+</table><p>
+</body>
+</html>
